@@ -5,22 +5,17 @@ public class Classwork
   {
     String word = FirstlastN("dictionary", 3);
     System.out.println(word);
+    word = delEnd("computer", 5);
+    System.out.println(word);
   }
 
   public static String FirstlastN(String s, int n)
   {
-    int startingIndex = s.length() - n;
-    String output = s.substring(0, startingIndex);
+    String output = s.substring(0, n);
   
     int endingIndex = s.length() - n;
-    String output2 = s.substring(endingIndex, s.length());
-    return(output + output2);
-  }
-
-//DelEnd
-  {
-    String word = delEnd("computer", 5);
-    System.out.println(word);
+    String output2 = s.substring(endingIndex);
+    return (output + output2);
   }
 
   public static String delEnd(String s, int n)
@@ -30,4 +25,9 @@ public class Classwork
     return output;
   }
 
+// ComparingLowerCase 
+  public static String compareLower(String s, String i)
+  {
+    
+  }
 }
