@@ -10,7 +10,10 @@ public class Classwork
     word = delEnd("computer", 5);
     System.out.println(word);
     //CompareLowerCase
-    System.out.println(str1.comparetostr2);
+    int compare = compareLower("framing","framING");
+    System.out.println(compare);
+    int length = LengthFirst("Down is the new up");
+    System.out.println(length);
   }
 
   public static String FirstlastN(String s, int n)
@@ -30,9 +33,17 @@ public class Classwork
   }
 
 // ComparingLowerCase 
-  public static String compareLower(String s, String i)
+  public static int compareLower(String s, String i)
   {
-    String str1 = s;
-    String str2 = i;
+    s = s.toLowerCase();
+    i = i.toLowerCase();
+    return(s.compareTo(i));
   }
+// LengthFirst
+public static int LengthFirst(String sentence)
+{
+  int s = sentence.indexOf(" ");
+  String output = sentence.substring (0, s);
+  return output.length();
+}
 }
